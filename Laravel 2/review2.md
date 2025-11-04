@@ -4,19 +4,19 @@
 
 ### @method('PUT')を記述した行に何が出力されているか
 
-- <input type="hidden" name="_method" value="PUT">
+- {{ '<input type="hidden" name="_method" value="PUT">' }}
 
 ### findメソッドの引数に指定しているIDは何のIDか
 
-- DBのid
+- todosテーブルのidカラムの値
 
 ### findメソッドで実行しているSQLは何か
 
-- $todo = $model->find($id);
+- SELECT * FROM todos;
 
 ### findメソッドで取得できる値は何か
 
-- DBのレコードの値
+- 指定のidカラムの値と同じレコードの情報
 
 ### saveメソッドは何を基準にINSERTとUPDATEを切り替えているのか
 
@@ -40,7 +40,8 @@
 
 ### RequestクラスからFormRequestクラスに変更した理由
 
-- Laravelで用意しているクラスを継承した新たなクラスを作りたかったため
+- Laravelで用意しているクラスを継承した新たなクラスを作りたかったため。
+→雛形にないコードを利用したいから
 
 ### $errorsのhasメソッドの引数・返り値は何か
 
