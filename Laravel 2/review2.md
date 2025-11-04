@@ -4,7 +4,7 @@
 
 ### @method('PUT')を記述した行に何が出力されているか
 
-- {{ '<input type="hidden" name="_method" value="PUT">' }}
+- `<input type="hidden" name="_method" value="PUT">`
 
 ### findメソッドの引数に指定しているIDは何のIDか
 
